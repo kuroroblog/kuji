@@ -4,10 +4,8 @@ from selenium.common.exceptions import NoSuchElementException
 
 # くじURLリスト
 kujiUrlList = [
-    'https://kuji.rakuten.co.jp/7393386d27',
-    'https://kuji.rakuten.co.jp/889373540e',
-    'https://kuji.rakuten.co.jp/14d330d3e0',
-    'https://kuji.rakuten.co.jp/81137ce423',
+    'https://kuji.rakuten.co.jp/4351057845',
+    'https://kuji.rakuten.co.jp/8c538152dd',
 ]
 
 # ユーザーID
@@ -25,9 +23,9 @@ def openKujiBrowser(selenium, url):
         # ページ読み込みのために遅延させる。
         selenium.stop(5)
 
-        # ルーレット開始ボタンの要素をセット
+        # くじ開始ボタンの要素をセット
         selenium.find_element_xpath("//*[@id='entry']")
-        # ルーレット開始ボタンクリック
+        # くじ開始ボタンクリック
         selenium.click()
 
         # くじの実行時間のために遅延させる。
